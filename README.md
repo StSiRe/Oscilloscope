@@ -1,2 +1,2 @@
 # Oscilloscope
- Oscilloscope based on Arduino boards
+ Smart Oscilloscope. Based on Arduino Boards
