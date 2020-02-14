@@ -9,24 +9,48 @@ void setup()
   pinMode(pin1,INPUT);
   pinMode(pin2,INPUT);
   
-  analogWrite(6,128);
+  analogWrite(6,16);//fOR EXAMPLE
 
    
 }  
 
 void loop()    
 { 
-  Serial.println("$");
-  Serial.println(analogRead(A0));
-  Serial.println(" ");
-  Serial.println(analogRead(A1));
-  Serial.println(";");
-  /*
-  Serial.println(A01);
-  delay(1);
-  */
+  //SendToHooliGraph();
+  //SendToArduino();
+  SendToSerialPlotter();
 } 
-
+void SendToHooliGraph()//Start sending data to Hooli.Graph
+{
+  for(;;)
+  {
+    Serial.print("$");
+    Serial.print(analogRead(A0));
+    Serial.print(" ");
+    Serial.print(analogRead(A1));
+    Serial.println(";");
+  }
+}
+void SendToArduino()
+{
+  for(;;)
+  {
+    Serial.print(analogRead(A0));
+    Serial.print(" ");
+    Serial.println(analogRead(A1));
+  }
+}
+void SendToSerialPlotter()
+{
+  for(;;)
+  {
+    Serial.println("$");
+    Serial.println(analogRead(A0));
+    Serial.println(" ");
+    Serial.println(analogRead(A1));
+    Serial.println(";");
+  }
+}
 /*
 ISR(ADC_vect)  
 {  
