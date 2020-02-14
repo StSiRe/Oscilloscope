@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoT", "IoT\IoT.csproj", "{8FB646C0-2789-43D0-B53C-B22B5CF94DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hooli.Graph", "Hooli.Graph\Hooli.Graph.csproj", "{95FC8E67-93E6-497C-A075-F5BBCF1DF2D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FB646C0-2789-43D0-B53C-B22B5CF94DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB646C0-2789-43D0-B53C-B22B5CF94DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB646C0-2789-43D0-B53C-B22B5CF94DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB646C0-2789-43D0-B53C-B22B5CF94DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95FC8E67-93E6-497C-A075-F5BBCF1DF2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FC8E67-93E6-497C-A075-F5BBCF1DF2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95FC8E67-93E6-497C-A075-F5BBCF1DF2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95FC8E67-93E6-497C-A075-F5BBCF1DF2D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F564FA03-E9BA-41B4-928F-A09FA5445D89}
+	EndGlobalSection
+EndGlobal
