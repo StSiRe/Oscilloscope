@@ -16,3 +16,8 @@ C:\Users\Фтвн\Oscilloscope\Hooli\IoT\obj\Debug\IoT.csprojAssemblyReference.c
 C:\Users\Фтвн\Oscilloscope\Hooli\IoT\obj\Debug\IoT.csproj.CoreCompileInputs.cache
 C:\Users\Фтвн\Oscilloscope\Hooli\IoT\obj\Debug\IoT.dll
 C:\Users\Фтвн\Oscilloscope\Hooli\IoT\obj\Debug\IoT.pdb
+C:\Users\Andy\Oscilloscope\Hooli\IoT\bin\Debug\IoT.dll
+C:\Users\Andy\Oscilloscope\Hooli\IoT\bin\Debug\IoT.pdb
+C:\Users\Andy\Oscilloscope\Hooli\IoT\obj\Debug\IoT.csprojResolveAssemblyReference.cache
+C:\Users\Andy\Oscilloscope\Hooli\IoT\obj\Debug\IoT.dll
+C:\Users\Andy\Oscilloscope\Hooli\IoT\obj\Debug\IoT.pdb

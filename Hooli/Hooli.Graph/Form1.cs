@@ -18,6 +18,7 @@ namespace Hooli.Graph
             InitializeComponent();
             serial = new SerialPortShell();
             AddPortsToBox();
+            
         }
         private void AddPortsToBox()
         {
@@ -35,6 +36,7 @@ namespace Hooli.Graph
 
         private void ButtonConnect_Click(object sender, EventArgs e)
         {
+            DrawCoord();
             try
             {
                 var port = BoxSerialPorts.Items[BoxSerialPorts.SelectedIndex];
@@ -47,7 +49,6 @@ namespace Hooli.Graph
                     return;
                 }
                 Console.Out.WriteLine("Serial port configurated and connected successful!");
-                serial.OnDataEvent += Serial_OnDataEvent;
             }
             catch (Exception ex)
             {
@@ -65,12 +66,50 @@ namespace Hooli.Graph
             try
             {
                 serial.Close();
-                serial.OnDataEvent -= Serial_OnDataEvent;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+        void DrawValue(int x,int y)
+        {
+
+        }
+        void DrawCoord()
+        {
+            Pen pn = new Pen(Color.Blue, 50);
+            Graphics g = CreateGraphics();
+            g.DrawEllipse(pn, 200, 200, 300, 200);  //20
+        }
+        Pair ParseData(string data)
+        {
+            if (data[0] != '$') return new Pair(0,0);
+            //$value value2;
+            //data = data.Substring(1);
+            data = data.Substring(1, data.Length - 2);//value value2
+            var nData = data.Split(' ');// "value","value2" - in array
+            if (nData.Length <= 1) return new Pair(0, 0);
+            int x = Convert.ToInt16(nData[0]);
+            int y = Convert.ToInt16(nData[1]);
+            //Converting x,y to 8 bit value
+            /// 1024 - value
+            /// 256 - x
+            /// x = 256*value/1024 = value/4
+            return new Pair(x/4, y/4);
+        }
     }
+    class Pair
+    {
+        public int x { get; set; }
+        public int y { get; set; }
+        public Pair(int xi,int yi)
+        {
+            x = xi;
+            y = yi;
+        }
+    }
+
 }

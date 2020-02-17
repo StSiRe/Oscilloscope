@@ -24,3 +24,14 @@ C:\Users\Фтвн\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\Hooli.Graph.pdb
 C:\Users\Фтвн\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\IoT.dll
 C:\Users\Фтвн\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\IoT.pdb
 C:\Users\Фтвн\Oscilloscope\Hooli\Hooli.Graph\obj\Debug\Hooli.Graph.csproj.CopyComplete
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\Hooli.Graph.exe.config
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\Hooli.Graph.exe
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\Hooli.Graph.pdb
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\IoT.dll
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\bin\Debug\IoT.pdb
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\obj\Debug\Hooli.Graph.csprojResolveAssemblyReference.cache
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\obj\Debug\Hooli.Graph.Form1.resources
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\obj\Debug\Hooli.Graph.Properties.Resources.resources
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\obj\Debug\Hooli.Graph.csproj.GenerateResource.Cache
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\obj\Debug\Hooli.Graph.exe
+C:\Users\Andy\Oscilloscope\Hooli\Hooli.Graph\obj\Debug\Hooli.Graph.pdb
