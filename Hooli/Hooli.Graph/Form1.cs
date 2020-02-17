@@ -73,16 +73,29 @@ namespace Hooli.Graph
             }
         }
 
-
+        Bitmap bmp;//Здесь рисуем
         void DrawValue(int x,int y)
         {
 
         }
         void DrawCoord()
         {
-            Pen pn = new Pen(Color.Blue, 50);
-            Graphics g = CreateGraphics();
-            g.DrawEllipse(pn, 200, 200, 300, 200);  //20
+            bmp = new Bitmap(PicBox.ClientSize.Width, PicBox.ClientSize.Height);
+            using (Graphics g = Graphics.FromImage(bmp))
+            {
+                g.Clear(Color.White);
+                //Draw ordinates
+                g.DrawLine(Pens.Black, 15, 15, 15, PicBox.ClientSize.Height - 15);
+                g.DrawLine(Pens.Black, 15, PicBox.ClientSize.Height - 15, PicBox.ClientSize.Width, PicBox.ClientSize.Height - 15);
+                //------------
+                //Draw ends of ordinates
+
+                SolidBrush Brush = new SolidBrush(Color.Black);
+                g.DrawString("0", Font, Brush, 5, PicBox.ClientSize.Height - 15);//Начало координат
+                //------------------
+
+            }
+            PicBox.Image = bmp;
         }
         Pair ParseData(string data)
         {

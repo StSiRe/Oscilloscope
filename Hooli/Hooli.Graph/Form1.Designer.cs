@@ -111,7 +111,7 @@
             // 
             this.PicBox.Location = new System.Drawing.Point(13, 62);
             this.PicBox.Name = "PicBox";
-            this.PicBox.Size = new System.Drawing.Size(773, 364);
+            this.PicBox.Size = new System.Drawing.Size(773, 382);
             this.PicBox.TabIndex = 7;
             this.PicBox.TabStop = false;
             // 
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 466);
             this.Controls.Add(this.PicBox);
             this.Controls.Add(this.ButtonDisconnect);
             this.Controls.Add(this.label2);
